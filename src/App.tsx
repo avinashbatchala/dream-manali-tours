@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
@@ -25,6 +25,7 @@ const App: React.FC = () => {
               <Services />
               <About />
             </>} />
+            <Route path="/dream-manali-tours" element={<Navigate to="/" />} />
             <Route path="/manalilocal" element={<ManaliLocal />} />
             <Route path="/rohtang" element={<Rohtang />} />
             <Route path="/adventures" element={<Adventures />} />
