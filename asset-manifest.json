@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dream-manali-tours/static/css/main.23178f62.css",
-    "main.js": "/dream-manali-tours/static/js/main.1c583774.js",
+    "main.css": "/dream-manali-tours/static/css/main.e4d9acb9.css",
+    "main.js": "/dream-manali-tours/static/js/main.23b61344.js",
     "static/js/453.0fa2503e.chunk.js": "/dream-manali-tours/static/js/453.0fa2503e.chunk.js",
     "static/media/hero-3.jpg": "/dream-manali-tours/static/media/hero-3.bad62591fe70dae05804.jpg",
     "static/media/old-manali.jpg": "/dream-manali-tours/static/media/old-manali.e1cb6ca1acb61c18eeff.jpg",
@@ -13,12 +13,12 @@
     "static/media/logo.svg": "/dream-manali-tours/static/media/logo.5cc20ef0f3c6b23767d5e497067626cd.svg",
     "static/media/hadimba-temple.jpg": "/dream-manali-tours/static/media/hadimba-temple.5e12df9a3d6c1421411a.jpg",
     "index.html": "/dream-manali-tours/index.html",
-    "main.23178f62.css.map": "/dream-manali-tours/static/css/main.23178f62.css.map",
-    "main.1c583774.js.map": "/dream-manali-tours/static/js/main.1c583774.js.map",
+    "main.e4d9acb9.css.map": "/dream-manali-tours/static/css/main.e4d9acb9.css.map",
+    "main.23b61344.js.map": "/dream-manali-tours/static/js/main.23b61344.js.map",
     "453.0fa2503e.chunk.js.map": "/dream-manali-tours/static/js/453.0fa2503e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23178f62.css",
-    "static/js/main.1c583774.js"
+    "static/css/main.e4d9acb9.css",
+    "static/js/main.23b61344.js"
   ]
 }
