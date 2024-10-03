@@ -1,20 +1,25 @@
 /* src/components/Description/Description.css */
 .description {
-  padding: 110px;
-  background-color: #FFFFFF; /* White background */
-  text-align: justify-all;
-  color: #333333;
+  padding: 60px 40px; /* Adjusted padding for a more balanced layout */
+  background: rgba(255, 255, 255, 0.6); /* Translucent white for frosted-glass effect */
+  backdrop-filter: blur(15px); /* Blur effect for a frosted-glass look */
+  border-radius: 16px; /* Rounded corners for a fluid appearance */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: left;
+  color: #323130; /* Fluent Neutral Dark */
+  max-width: 900px; /* Limiting width for better readability */
+  margin: 40px auto; /* Centering the description with top and bottom margins */
 }
 
 .description h2 {
-  font-size: 2rem;
-  margin-bottom: 0;
-  color: #333333; /* Dark gray for headings */
+  font-size: 2.5rem; /* Slightly larger font for prominence */
+  margin-bottom: 20px; /* Increased bottom margin for spacing */
+  color: darkslategrey; /* Fluent UI Blue for heading */
 }
 
 .description p {
-  font-size: 1rem;
-  line-height: 1.5;
-  max-width: 800px;
-  margin-bottom: 0;
+  font-size: 1.1rem; /* Slightly larger for improved readability */
+  line-height: 1.75; /* Increased line-height for a more open look */
+  color: darkslategrey; /* Fluent Neutral Secondary for paragraph text */
+  margin-bottom: 20px; /* Consistent margin-bottom */
 }
