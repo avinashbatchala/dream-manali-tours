@@ -1,6 +1,7 @@
 /* about.css */
 .about {
   padding: 40px 20px;
-  background-color: #FAF3E0; /* Softer beige for a warm background */
+  background-color: #FFFFFF; /* Pure white for a clean look */
   text-align: center;
+  color: #333333; /* Dark gray for text */
 }

@@ -1,7 +1,7 @@
 /* Footer.css */
 .footer {
   padding: 20px;
-  background-color: #1E5631; /* Dark green for footer */
-  color: #FAF3E0; /* Light beige text for contrast */
+  background-color: #333333; /* Dark background for contrast */
+  color: #FFFFFF; /* White text for readability */
   text-align: center;
 }

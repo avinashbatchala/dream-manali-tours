@@ -1,3 +1,4 @@
+
 /* FloatingCallButton.css */
 .floating-buttons {
   position: fixed;
@@ -18,22 +19,22 @@
   color: #FFFFFF;
   font-size: 24px;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
 
 .call-button {
-  background-color: #28A745; /* Slightly muted green */
+  background-color: #4CAF50; /* Minimalist soft green */
 }
 
 .call-button:hover {
-  background-color: #218838; /* Darker green on hover */
+  background-color: #388E3C; /* Slightly darker green for hover */
 }
 
 .whatsapp-button {
-  background-color: #25D366; /* WhatsApp green */
+  background-color: #4CAF50; /* Unified button color scheme */
 }
 
 .whatsapp-button:hover {
-  background-color: #128C7E; /* Darker WhatsApp green on hover */
+  background-color: #388E3C;
 }

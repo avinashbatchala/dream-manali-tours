@@ -1,20 +1,20 @@
 /* src/components/Description/Description.css */
 .description {
-  padding: 20px;
-  background-color: #FAF3E0;
-  text-align: center;
-  color: #333;
+  padding: 110px;
+  background-color: #FFFFFF; /* White background */
+  text-align: justify-all;
+  color: #333333;
 }
 
 .description h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #1E5631; /* Use logo's dark green */
+  margin-bottom: 0;
+  color: #333333; /* Dark gray for headings */
 }
 
 .description p {
   font-size: 1rem;
   line-height: 1.5;
   max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 0;
 }

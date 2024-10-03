@@ -1,24 +1,33 @@
-/* src/components/Header/Header.css */
+/* Header.css */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1E5631; /* Dark green from the logo */
-  position: relative;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .logo {
   height: 100px;
-  max-width: 150px;
+  max-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 /* Navigation styles */
 .nav {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-grow: 1;
+  gap: 30px;
+  justify-content: center; /* Center the menu items */
+  flex-grow: 1; /* Allow the nav to take up available space */
 }
 
 .nav ul {
@@ -30,67 +39,26 @@
 }
 
 .nav a {
-  color: #FAF3E0; /* Light beige for links */
+  color: #1C1C1E;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hamburger menu button styles */
-.menu-button {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger {
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  background: #FAF3E0;
-  transition: all 0.3s ease;
-}
-
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.nav a:hover {
+  color: #007AFF;
+  transform: scale(1.05);
 }
 
 /* Responsive styling */
 @media (max-width: 768px) {
   .nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #1E5631;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
-
-  .nav.nav-open {
-    display: flex;
+    padding-left: 60px;
+    justify-content: initial; /* Center the menu items on mobile */
   }
 
   .menu-button {
-    display: block;
+    display: none; /* Hide the hamburger button on mobile */
   }
 }
