@@ -1,0 +1,46 @@
+/* src/components/ManaliLocal/ManaliLocal.css */
+.manali-local {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.manali-local h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 30px;
+}
+
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.place-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.place-card h3 {
+  font-size: 1.5rem;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.place-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.place-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

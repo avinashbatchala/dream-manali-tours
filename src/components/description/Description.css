@@ -1,0 +1,20 @@
+/* src/components/Description/Description.css */
+.description {
+  padding: 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  color: #333;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+.description p {
+  font-size: 1rem;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto;
+}

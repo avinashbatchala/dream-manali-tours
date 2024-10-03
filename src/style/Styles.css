@@ -1,0 +1,19 @@
+/* Styles.css */
+
+:root {
+  --deep-teal: #1C3E4F;
+  --soft-cream: #EFE5D5;
+  --sunset-orange: #E47A41;
+  --forest-green: #4A7C59;
+  --sky-blue: #8FC1D4;
+}
+
+body {
+  background-color: var(--soft-cream);
+  color: var(--deep-teal);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Other global styles as needed */
