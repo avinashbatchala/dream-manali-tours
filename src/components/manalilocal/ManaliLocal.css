@@ -1,14 +1,13 @@
-/* src/components/ManaliLocal/ManaliLocal.css */
 .manali-local {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #FAF3E0;
   text-align: center;
 }
 
 .manali-local h2 {
   font-size: 2.5rem;
-  color: #004d40;
   margin-bottom: 30px;
+  color: #1E5631;
 }
 
 .places-container {
@@ -19,7 +18,7 @@
 }
 
 .place-card {
-  background-color: white;
+  background-color: #FAF3E0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -29,13 +28,14 @@
 
 .place-card h3 {
   font-size: 1.5rem;
-  color: #ff9800;
   margin-bottom: 10px;
+  color: #FFC107;
 }
 
 .place-card p {
   font-size: 1rem;
   line-height: 1.5;
+  color: #333;
 }
 
 .place-image {

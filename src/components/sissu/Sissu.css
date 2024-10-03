@@ -1,0 +1,27 @@
+/* src/components/sissu/Sissu.css */
+.sissu {
+  padding: 40px 20px;
+  background-color: #EFE5D5;
+  text-align: center;
+}
+
+.sissu h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.sissu p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.sissu-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}

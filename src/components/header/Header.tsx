@@ -1,5 +1,5 @@
-// src/components/Header/Header.tsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/logo.svg';
 
@@ -12,7 +12,9 @@ const Header: React.FC = () => {
 
   return (
       <header className="header">
-        <img src={logo} alt="Dream Manali Tours Logo" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="Dream Manali Tours Logo" className="logo" />
+        </Link>
         <button className="menu-button" onClick={toggleMenu}>
           <div className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
             <span></span>
@@ -22,7 +24,7 @@ const Header: React.FC = () => {
         </button>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><Link to="/">Home</Link></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>

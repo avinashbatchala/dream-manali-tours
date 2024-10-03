@@ -3,22 +3,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #004d40;
-  position: relative; /* Set position relative to allow absolute positioning of nav */
-  z-index: 1000; /* Ensure header stays on top */
+  background-color: #1E5631; /* Dark green from the logo */
+  position: relative;
+  z-index: 1000;
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
+  max-width: 150px;
 }
 
 /* Navigation styles */
 .nav {
   display: flex;
   gap: 20px;
-  justify-content: center; /* Center the menu items */
-  flex-grow: 1; /* Allow the nav to grow and take available space */
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .nav ul {
@@ -30,14 +30,14 @@
 }
 
 .nav a {
-  color: white;
+  color: #FAF3E0; /* Light beige for links */
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 /* Hamburger menu button styles */
 .menu-button {
-  display: none; /* Hidden by default */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -54,7 +54,7 @@
 .hamburger span {
   display: block;
   height: 3px;
-  background: white;
+  background: #FAF3E0;
   transition: all 0.3s ease;
 }
 
@@ -73,24 +73,24 @@
 /* Responsive styling */
 @media (max-width: 768px) {
   .nav {
-    display: none; /* Hide the navigation by default on mobile */
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100%; /* Position the nav below the header */
+    top: 100%;
     right: 0;
-    background-color: #004d40;
+    background-color: #1E5631;
     width: 100%;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 999; /* Ensure nav is below the header */
+    z-index: 999;
   }
 
   .nav.nav-open {
-    display: flex; /* Show the navigation when nav-open class is added */
+    display: flex;
   }
 
   .menu-button {
-    display: block; /* Show the hamburger button on mobile screens */
+    display: block;
   }
 }

@@ -1,13 +1,13 @@
 /* src/components/Adventures/Adventures.css */
 .adventures {
   padding: 40px 20px;
-  background-color: #e8f5e9;
+  background-color: #F0F8F5; /* Light, muted green for a calming effect */
   text-align: center;
 }
 
 .adventures h2 {
   font-size: 2.5rem;
-  color: #004d40;
+  color: #1E5631; /* Dark green from the logo for headings */
   margin-bottom: 30px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .activity-card {
-  background-color: white;
+  background-color: #FAF3E0; /* Matching the about section */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -29,11 +29,12 @@
 
 .activity-card h3 {
   font-size: 1.5rem;
-  color: #ff9800;
+  color: #FFC107; /* Bright accent color */
   margin-bottom: 10px;
 }
 
 .activity-card p {
   font-size: 1rem;
   line-height: 1.5;
+  color: #333; /* Dark text for readability */
 }

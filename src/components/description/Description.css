@@ -1,7 +1,7 @@
 /* src/components/Description/Description.css */
 .description {
-  padding: 20px 20px;
-  background-color: #f0f0f0;
+  padding: 20px;
+  background-color: #FAF3E0;
   text-align: center;
   color: #333;
 }
@@ -9,12 +9,12 @@
 .description h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #004d40;
+  color: #1E5631; /* Use logo's dark green */
 }
 
 .description p {
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
 }
