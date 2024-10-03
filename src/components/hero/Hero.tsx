@@ -1,6 +1,6 @@
 // src/components/Hero/Hero.tsx
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
 import './Hero.css';
 import image1 from '../../assets/hero-1.jpg'; // Add your images here
@@ -19,15 +19,15 @@ const Hero: React.FC = () => {
             dynamicHeight
         >
           <div>
-            <img src={image1} alt="Scenic view 1" />
-            <p className="legend">Explore the Beauty of Manali</p>
+            <img src={image1} alt="Scenic view 1"/>
+            <p className="legend">Welcome to Manali Dream Tours</p>
           </div>
           <div>
-            <img src={image2} alt="Scenic view 2" />
+            <img src={image2} alt="Scenic view 2"/>
             <p className="legend">Adventure Awaits</p>
           </div>
           <div>
-            <img src={image3} alt="Scenic view 3" />
+            <img src={image3} alt="Scenic view 3"/>
             <p className="legend">Your Dream Destination</p>
           </div>
         </Carousel>

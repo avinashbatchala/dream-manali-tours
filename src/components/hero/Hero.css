@@ -1,40 +1,50 @@
 /* Hero.css */
 .hero {
   width: 100%;
-  max-height: 60vh; /* Slightly increased height for a more immersive feel */
-  position: relative; /* Set relative positioning for overlay elements */
-  overflow: hidden; /* Use hidden to ensure no content overflow */
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Translucent overlay for a frosted-glass effect */
-  /*backdrop-filter: blur(1px); !* Subtle blur for the background *!*/
-  z-index: 1; /* Position it behind the hero content */
+  height: 60vh; /* Larger height for an immersive visual */
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel .slide img {
   width: 100%;
-  height: 60vh; /* Adjust to match hero height */
+  height: 60vh; /* Adjusted to match the hero height */
   object-fit: cover;
-  /*filter: blur(1px); !* Slight blur to match Fluent UI style *!*/
-  transform: scale(1.05); /* Slight scaling to avoid visible edges when blurred */
+  transform: scale(1.05); /* Scale up to prevent visible edges when blurred */
 }
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #323130;
+  text-align: center;
+  z-index: 2; /* Above the blurred overlay */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Larger font size for prominence */
+  color: #0078D4; /* Fluent UI Blue for contrast */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #323130;
+}
+
+/* Legend styling for carousel */
 .carousel .legend {
-  position: absolute; /* Absolute positioning to overlay on the hero section */
+  position: absolute;
   bottom: 20px;
   left: 20px;
   background: rgba(0, 0, 0, 0.5); /* Dark translucent background for contrast */
   color: #FFFFFF; /* White text for clarity */
-  padding: 15px 20px; /* Increased padding for a cleaner look */
-  font-size: 1.4rem; /* Slightly larger font size for better readability */
-  border-radius: 12px; /* Rounded corners for a Fluent UI style */
-  /*backdrop-filter: blur(5px); !* Apply blur to enhance the frosted-glass effect *!*/
-  z-index: 2; /* Ensure the legend appears above the overlay */
+  padding: 15px 20px;
+  font-size: 3rem; /* Larger font size for readability */
+  border-radius: 12px; /* Rounded corners to match Fluent UI */
+  backdrop-filter: blur(5px); /* Blur to maintain frosted-glass effect */
+  z-index: 2; /* Above the overlay */
+  text-align: left; /* Left align the text */
+  max-width: 50%; /* Limit the width of the legend */
 }

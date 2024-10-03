@@ -1,25 +1,53 @@
 /* src/components/Description/Description.css */
 .description {
-  padding: 60px 40px; /* Adjusted padding for a more balanced layout */
-  background: rgba(255, 255, 255, 0.6); /* Translucent white for frosted-glass effect */
-  backdrop-filter: blur(15px); /* Blur effect for a frosted-glass look */
-  border-radius: 16px; /* Rounded corners for a fluid appearance */
+  position: relative;
+  padding: 65px 20px;
+  background: url('../../assets/manali-2.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: clip;
+  text-align: center;
+  display: flex; /* Use flex to center the card */
+  justify-content: center;
+  align-items: center;
+  color: #323130;
+  height: 30vh; /* Ensure it takes the full viewport height */
+}
+
+.description-card {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent for frosted glass effect */
+  backdrop-filter: blur(20px); /* Blur effect for frosted-glass look */
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px; /* Rounded corners for a softer look */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  text-align: left;
-  color: #323130; /* Fluent Neutral Dark */
-  max-width: 900px; /* Limiting width for better readability */
-  margin: 40px auto; /* Centering the description with top and bottom margins */
+  max-width: 800px; /* Limit the width for better readability */
+  width: 100%; /* Take up full width within the max-width limit */
+  z-index: 2; /* Ensure it is above the background */
 }
 
 .description h2 {
-  font-size: 2.5rem; /* Slightly larger font for prominence */
-  margin-bottom: 20px; /* Increased bottom margin for spacing */
-  color: darkslategrey; /* Fluent UI Blue for heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: darkslategrey;
 }
 
 .description p {
-  font-size: 1.1rem; /* Slightly larger for improved readability */
-  line-height: 1.75; /* Increased line-height for a more open look */
-  color: darkslategrey; /* Fluent Neutral Secondary for paragraph text */
-  margin-bottom: 20px; /* Consistent margin-bottom */
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: darkslategrey;
+  margin: 0;
+}
+
+/* Blurred background using a pseudo-element */
+.description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(0px);
+  z-index: 1; /* Place it below the card */
+  transform: scale(1.1); /* Scale up to avoid sharp edges */
 }
